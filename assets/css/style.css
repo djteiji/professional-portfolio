@@ -7,28 +7,67 @@ body {
     background-color: lightcyan;
 }
 
-header h1 {
-    display: inline;
-}
-
-header nav {
-    float: right;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-right: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 22px;
-}
-
-.header {
+header {
     padding: 20px 35px;
     font-family: monospace;
     background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+
+
+.about-me-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+aside {
+    flex: 1;
+    background-color: crimson;
+    padding: 80px;
+    text-align: center;
+}
+
+.about-me {
+    flex: 4;
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.hero {
+    background-image: url(../css/images/hero-image.jpeg);
+    height: 600px;
+    background-size: cover;
+}
