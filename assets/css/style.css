@@ -1,10 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: lightcyan;
+    box-sizing: border-box;
 }
 
 header {
@@ -22,52 +19,103 @@ header h1 {
     margin: 0;
 }
 
-header a {
-    text-decoration: none;
-}
-
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
-
+header nav ul li {
+    padding: 5px 30px 0px 30px;
+}
 
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-decoration: none;
+    color: black;
 }
 
+.hero {
+    background-image: url(../css/images/sound-538x218.jpeg);
+    height: 500px;
+    background-size: cover;
+}
 
+h2 {
+    color: black;
+    text-align: left;
+    width: 225px;
+    font-family: monospace;
+    font-size: 1.55vw;
+    font-weight: lighter;
+}
 
-.about-me-section {
+.left-column {
+    padding: 150px;
+    background-color: crimson;
+}
+
+.right-column {
+    background-color: lavender;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-  }
+    justify-content: left;
+}
 
-aside {
-    flex: 1;
-    background-color: crimson;
-    padding: 80px;
+.me-description {
+    background-color: lavender;
+    width: 100%;
     text-align: center;
 }
 
-.about-me {
-    flex: 4;
-    padding: 70px;
+.me-description p {
+    margin-top: 175px;
+}
+
+.side-bar {
+    display: flex;
+}
+
+.images {
+    border-style: solid;
+    border-width: 3px;
+    margin: 10px;
+    opacity: .4;
+}
+
+.images:hover {
+    opacity: 1;
+}
+
+.images p {
+    color: black;
+    font-family: monospace;
+    font-size: 1.55vw;
+    font-weight: lighter
+}
+
+.contact-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 10px 100px 10px 100px;
+    background-color: antiquewhite;
+}
+
+.contact-info {
+    margin-top: 150px;
+}
+
+.contact-info a {
+    color: black;
+    width: 225px;
+    font-family: monospace;
+    font-size: 1.55vw;
+    font-weight: lighter
 }
 
 
-
-.hero {
-    background-image: url(../css/images/hero-image.jpeg);
-    height: 600px;
-    background-size: cover;
-}

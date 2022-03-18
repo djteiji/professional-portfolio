@@ -16,13 +16,13 @@
         <nav>
             <ul>
                 <li>
-                   <a href="">About Me</a> 
+                   <a href="#this-is-about-me">About Me</a> 
                 </li>
                 <li>
-                    <a href="">Work</a> 
+                    <a href="#this-is-my-work">Work</a> 
                 </li>
                 <li>
-                    <a href="">Contact Me</a> 
+                    <a href="#this-is-my-contact-info">Contact Me</a> 
                 </li>
             </ul>
         </nav>
@@ -36,61 +36,82 @@
 
     <!-- about me section -->
     <main>
-        <section class="about-me-section">
-            <aside>
+        <div id="this-is-about-me" class="side-bar">
+            <div class="left-column">
                 <h2>About Me</h2>
-            </aside>
-            <section class="about-me">
+            </div>
+            <div class="me-description">
                 <p>
                     Lorem ipsum dolor sit amet. Ut galisum Quis in placeat deleniti sed ipsam molestias est ipsa natus non molestiae veritatis vel aliquam voluptates! Aut quia iure qui autem harum sed quae animi ut officiis minus ut enim asperiores vel quibusdam quasi qui cupiditate consequuntur. Sit adipisci nisi aut rerum voluptatem sit quaerat obcaecati id doloribus laborum qui soluta quam!
                 </p>
-            </section>
-        </section>
+            </div>   
+        </div>
 
 
-        <!-- work section -->
+     <!-- work section -->
 
-        <section class="about-me-section">
-            <aside>
-                <h2>Work</h2>
-            </aside>
-            <section class="about-me">
-                <img src="./assets/css/images/Screen Shot 2022-03-10 at 9.48.03 PM.png" alt="">
-            </section>
-            <section class="about-me">
-                <img src="./assets/css/images/Screen Shot 2022-03-10 at 11.11.43 PM.png" alt="">
-            </section>
-            <section class="about-me">
-                <img src="./assets/css/images/Complex-Magazine.png" alt="">
-            </section>
-            <section class="about-me">
-                <img src="./assets/css/images/grayzone-project.png" alt="">
-            </section>
-            <section class="about-me">
-                <img src="./assets/css/images/Pitchfork.png" alt="">
-            </section>
-        </section>
+     <section class="side-bar">
+        <div id="this-is-my-work" class="left-column">
+            <h2>Work</h2>
+        </div>
 
+        <div class="right-column">
+            <section class="images"> 
+                
+                <a href="https://djteiji.github.io/horiseon-marketing/">
+                    <img class="large-img" src="./assets/css/images/Screen Shot 2022-03-10 at 9.48.03 PM.png" alt="">           
+                    <p>Horiseon Marketing</p>
+                </a>
+            </section>
+            <section class="images">
+                <a href="https://djteiji.github.io/run-buddy/">
+                    <img src="./assets/css/images/Screen Shot 2022-03-10 at 11.11.43 PM.png" alt="">
+                    <p>Run Buddy</p>
+                </a>
+            </section>
+            <section class="images">
+                <a href="https://www.complex.com/">
+                    <img src="./assets/css/images/Complex-Magazine.png" alt="">
+                    <p>Complex Magazine</p>
+                </a>
+            </section>
+            <section class="images">
+                <a href="https://thegrayzone.com/">
+                    <img src="./assets/css/images/grayzone-project.png" alt="">
+                    <p>The Grayzone Project</p>
+                </a>
+            </section>
+            <section class="images">
+                <a href="https://pitchfork.com/">
+                    <img src="./assets/css/images/Pitchfork.png" alt="">
+                    <p>Pitchfork</p>
+                </a>
+            </section>
+        </div>
+    </section>
 
     <!-- contact section -->
 
-        <section>
-            <h2>Contact Info</h2>
+        <section class="side-bar">
 
-            <ul>
-                <li>
-                    555.555.4136
-                </li>
-                <li>
-                    Email
-                </li>
-                <li>
-                    GitHub
-                </li>
-                <li>
-                    LinkedIn
-                </li>
-            </ul>
+            <div id="this-is-my-contact-info" class="left-column">
+                <h2>Contact Info</h2>
+            </div>
+
+            <div class="contact-container">
+                    <div class="contact-info">
+                        <a href="">555.555.4136</a> 
+                    </div>
+                    <div class="contact-info">
+                        <a href="">Email</a> 
+                    </div>
+                    <div class="contact-info">
+                        <a href="">GitHub</a> 
+                    </div>
+                    <div class="contact-info">
+                        <a href="">LinkedIn</a> 
+                    </div>
+            </div>
         </section>
     </main>
     <!-- footer -->
