@@ -11,11 +11,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -41,42 +42,78 @@ header nav ul li a {
     background-image: url(../css/images/sound-538x218.jpeg);
     height: 500px;
     background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero img {
+    width: 225px;
+    height: 300px;
+    margin-left: 35px;
+}
+
+.hero h2 {
+    
+    color: white;
+    width: 100%;
+    float: right;
+    text-align: right;
+    margin: auto 0 0;
+    font-size: 3.55vw;
 }
 
 h2 {
     color: black;
-    text-align: left;
-    width: 225px;
+    text-align: center;
+    width: 353px;
     font-family: monospace;
-    font-size: 1.55vw;
+    font-size: 2.55vw;
     font-weight: lighter;
 }
 
 .left-column {
-    padding: 150px;
+    padding: 110px;
     background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right-column {
     background-color: lavender;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 }
 
 .me-description {
     background-color: lavender;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.25vw;
 }
 
 .me-description p {
-    margin-top: 175px;
+    padding: 30px;
 }
 
 .side-bar {
     display: flex;
+}
+
+.small-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.side-bar .small-images a img {
+    width: 640px;
+    height: 307px;
 }
 
 .images {
@@ -98,24 +135,129 @@ h2 {
 }
 
 .contact-container {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 100px 10px 100px;
-    background-color: antiquewhite;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: lavender;
+    flex-basis: 100%;
+    align-items: center;
 }
 
-.contact-info {
-    margin-top: 150px;
+.contact-info p {
+    width: fit-content;
 }
 
-.contact-info a {
+.contact-info a, .contact-info p {
     color: black;
-    width: 225px;
     font-family: monospace;
     font-size: 1.55vw;
-    font-weight: lighter
+    font-weight: lighter;
+    text-decoration: none;
+    
 }
 
 
+@media only screen and (max-width: 1180px) {
+
+    header h1 {
+        font-size: 44px;
+    }
+   
+    .hero {
+        flex-direction: column;
+        
+    }
+
+    .hero h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 6.5vw;
+        margin-bottom: auto;
+    }
+
+    .hero img {
+        margin-left: 0;
+        margin-top: auto;
+    }
+    .left-column {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .side-bar {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .right-column section a img {
+        width: 370px;
+        height: 307px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .side-bar .small-images a img {
+        width: 370px;
+    }
+
+    .images {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 5.55vw;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .me-description p {
+        font-size: 4.0vw;
+    }
+
+    .right-column {
+        padding: 20px;
+    }
+
+    header nav ul {
+      
+      text-align: center;
+      justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 5.0vw;
+        
+    }
+
+    header nav ul li {
+        padding: 20px 30px 0px 30px;
+    }
+
+    .contact-container {
+        /* width: 100%; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px 100px 10px 100px;
+        background-color: lavender;
+        flex-basis: 100%;
+    }
+
+    .contact-container a, .contact-container p {
+        font-size: 5.0vw;
+        width: fit-content;
+    }
+
+    .contact-info {
+        padding: 30px;
+        text-align: center;
+    }
+
+}
